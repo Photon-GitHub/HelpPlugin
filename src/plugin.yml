@@ -1,0 +1,8 @@
+name: HelpPlugin
+version: 0.1
+main: de.photon.HelpPlugin.HelpPlugin
+author: Photon
+description: Help Plugin
+commands:
+  help:
+    description: Display a custom help page.
