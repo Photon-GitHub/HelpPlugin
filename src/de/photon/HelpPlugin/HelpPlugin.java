@@ -28,6 +28,12 @@ public class HelpPlugin extends JavaPlugin{
     }
 
     @Override
+    public void onDisable()
+    {
+        this.getLogger().info(" disabled.");
+    }
+
+    @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         try
         {
@@ -55,6 +61,7 @@ public class HelpPlugin extends JavaPlugin{
             return true;
         }catch (Exception e)
         {
+            e.printStackTrace();
             return false;
         }
     }
